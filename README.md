@@ -482,4 +482,5 @@ select first_name,salary from employees e1 where salary > (select round(avg(sala
 
 select first_name,department,salary,(select round(avg(salary)) from employees e2 where e1.department = e2.department) as avg_department from employees e1
 
+-------------------------------------------------------------------------------------------------------------------------------------
 
